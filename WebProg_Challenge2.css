@@ -1,10 +1,10 @@
 html {
     font-family: 'Lora', serif;
-    color: rgb(80, 80, 80);
+    
 }
 
 div {
-    border: 0.1px solid #e447cf;
+    /* border: 0.1px solid #e447cf; */
 }
 
 .Container {
@@ -22,8 +22,6 @@ div {
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
-    
-    background-color: azure;
 }
 
 .Title {
@@ -39,14 +37,16 @@ div {
     font-size: 27px;
     line-height: 80px;
     font-style: italic;
+    color: rgb(100, 100, 100);
+    text-shadow: 2px 2px 4px #a3a3a3;
 }
 
 .Abox {
     width: 100%;
-    /* height: 300px; */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    position: relative;
 }
 
 .Abutton {
@@ -56,18 +56,21 @@ div {
     flex-direction: column;
     justify-content: flex-end;
     margin-bottom: 55px;
-    background-color: rgb(20, 214, 214);
+    background-color: rgb(128, 146, 245);   
+}
+
+.image {
+    opacity: .5;
 }
 
 .Abuttontext {
-    /* width: 250px; */
-    height: 50px;
+    position: absolute;
+    width: 250px;
     font-size: 22px;
     text-align: center;
-    background-color: rgb(20, 214, 214);
     line-height: 0px;
-    color: rgb(32, 32, 32);
-    font-family: 'Lora', 600;
+    color: rgb(0, 0, 0);
+    opacity: .7;
 }
 
 .Submit {
