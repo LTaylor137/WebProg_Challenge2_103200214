@@ -1,5 +1,5 @@
 // Question 1
-{
+
     let Q1A = document.getElementById("Q1A");
     let Q1B = document.getElementById("Q1B");
     let Q1C = document.getElementById("Q1C");
@@ -9,9 +9,9 @@
     let Q1Ctext = document.getElementById("Q1Ctext");
     let Q1Dtext = document.getElementById("Q1Dtext");
     let Q1Ans = 0;
-}
+
 // Question 2
-{
+
     let Q2A = document.getElementById("Q2A");
     let Q2B = document.getElementById("Q2B");
     let Q2C = document.getElementById("Q2C");
@@ -25,9 +25,9 @@
     let Q2Cimage = document.getElementById("Q2Cimage");
     let Q2Dimage = document.getElementById("Q2Dimage");
     let Q2Ans = 0;
-}
+
 // Question 3
-{
+
     let Q3A = document.getElementById("Q3A");
     let Q3B = document.getElementById("Q3B");
     let Q3C = document.getElementById("Q3C");
@@ -41,9 +41,9 @@
     let Q3Cimage = document.getElementById("Q3Cimage");
     let Q3Dimage = document.getElementById("Q3Dimage");
     let Q3Ans = 0;
-}
+
 // Question 4
-{
+
     let Q4A = document.getElementById("Q4A");
     let Q4B = document.getElementById("Q4B");
     let Q4C = document.getElementById("Q4C");
@@ -57,9 +57,9 @@
     let Q4Cimage = document.getElementById("Q4Cimage");
     let Q4Dimage = document.getElementById("Q4Dimage");
     let Q4Ans = 0;
-}
+
 // Question 5
-{
+
     let Q5A = document.getElementById("Q5A");
     let Q5B = document.getElementById("Q5B");
     let Q5C = document.getElementById("Q5C");
@@ -73,9 +73,9 @@
     let Q5Cimage = document.getElementById("Q5Cimage");
     let Q5Dimage = document.getElementById("Q5Dimage");
     let Q5Ans = 0;
-}
+
 // Question 6
-{
+
     let Q6A = document.getElementById("Q6A");
     let Q6B = document.getElementById("Q6B");
     let Q6C = document.getElementById("Q6C");
@@ -89,7 +89,7 @@
     let Q6Cimage = document.getElementById("Q6Cimage");
     let Q6Dimage = document.getElementById("Q6Dimage");
     let Q6Ans = 0;
-}
+
 
 
 
@@ -591,14 +591,20 @@ Q6D.onclick = function Q6Dfunc() {
     Q6Dimage.style.filter = "grayscale(0%)";
 }
 
-submit.onclick = function submit() {
+submitbox.onclick = function submit() {
     // event.preventDefault();
     console.log("submit clicked");
     total = Q1Ans + Q2Ans + Q3Ans + Q4Ans + Q5Ans + Q6Ans;
     console.log("total correct = " + total);
-    submit.classList.remove("Submit");
-    submit.classList.add("Title");
-    submit.innerHTML = ("<h2>Congratulations, <br> you got " + total + " out of 6 <br> correct!</h2>");
+    submitbox.classList.remove("Submit");
+    submitbox.classList.add("Title");
+    if (total >= 5) {
+    submitbox.innerHTML = ("<h2>Congratulations, <br> you got " + total + " out of 6 <br> correct!</h2>");
+    }
+    else
+    if (total < 5) {
+        submitbox.innerHTML = ("<h2>You got " + total + " out of 6 <br> correct, please <br>try again.</h2>");
+    }
 
 }
 
