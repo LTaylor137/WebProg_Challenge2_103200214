@@ -26,6 +26,38 @@ let Q2Cimage = document.getElementById("Q2Cimage");
 let Q2Dimage = document.getElementById("Q2Dimage");
 let Q2Ans = 0;
 }
+// Question 3
+{
+    let Q3A = document.getElementById("Q3A");
+    let Q3B = document.getElementById("Q3B");
+    let Q3C = document.getElementById("Q3C");
+    let Q3D = document.getElementById("Q3D");
+    let Q3Atext = document.getElementById("Q3Atext");
+    let Q3Btext = document.getElementById("Q3Btext");
+    let Q3Ctext = document.getElementById("Q3Ctext");
+    let Q3Dtext = document.getElementById("Q3Dtext");
+    let Q3Aimage = document.getElementById("Q3Aimage");
+    let Q3Bimage = document.getElementById("Q3Bimage");
+    let Q3Cimage = document.getElementById("Q3Cimage");
+    let Q3Dimage = document.getElementById("Q3Dimage");
+    let Q3Ans = 0;
+    }
+    // Question 4
+{
+    let Q4A = document.getElementById("Q4A");
+    let Q4B = document.getElementById("Q4B");
+    let Q4C = document.getElementById("Q4C");
+    let Q4D = document.getElementById("Q4D");
+    let Q4Atext = document.getElementById("Q4Atext");
+    let Q4Btext = document.getElementById("Q4Btext");
+    let Q4Ctext = document.getElementById("Q4Ctext");
+    let Q4Dtext = document.getElementById("Q4Dtext");
+    let Q4Aimage = document.getElementById("Q4Aimage");
+    let Q4Bimage = document.getElementById("Q4Bimage");
+    let Q4Cimage = document.getElementById("Q4Cimage");
+    let Q4Dimage = document.getElementById("Q4Dimage");
+    let Q4Ans = 0;
+    }
 let total;
 let submit = document.getElementById("submit");
 
@@ -268,11 +300,98 @@ Q3D.onclick = function Q3Dfunc() {
     Q3Dtext.style.color ="white";
     Q3Dimage.style.filter = "grayscale(0%)";
 }
+// Question 4
+Q4A.onclick = function Q4Afunc() {
+    // event.preventDefault();
+    console.log("Q4A clicked");
+    Q4Ans = 0;
+    Q4A.style.backgroundColor ="blue";
+    Q4Atext.style.backgroundColor ="blue";
+    Q4Atext.style.color ="white";
+    Q4Aimage.style.filter = "grayscale(100%)";
+    Q4B.style.backgroundColor ="grey";
+    Q4Btext.style.backgroundColor ="grey";
+    Q4Btext.style.color ="black";
+    Q4Bimage.style.filter = "grayscale(100%)";
+    Q4C.style.backgroundColor ="grey";
+    Q4Ctext.style.backgroundColor ="grey";
+    Q4Ctext.style.color ="black";
+    Q4Cimage.style.filter = "grayscale(100%)";
+    Q4D.style.backgroundColor ="grey";
+    Q4Dtext.style.backgroundColor ="grey";
+    Q4Dtext.style.color ="black";
+    Q4Dimage.style.filter = "grayscale(100%)";
+}
+Q4B.onclick = function Q4Bfunc() {
+    // event.preventDefault();
+    console.log("Q4B clicked");
+    Q4Ans = 0;
+    Q4A.style.backgroundColor ="grey";
+    Q4Atext.style.backgroundColor ="grey";
+    Q4Atext.style.color ="black";
+    Q4Aimage.style.filter = "grayscale(100%)";
+    Q4B.style.backgroundColor ="red";
+    Q4Btext.style.backgroundColor ="red";
+    Q4Btext.style.color ="white";
+    Q4Bimage.style.filter = "grayscale(0%)";
+    Q4C.style.backgroundColor ="grey";
+    Q4Ctext.style.backgroundColor ="grey";
+    Q4Ctext.style.color ="black";
+    Q4Cimage.style.filter = "grayscale(100%)";
+    Q4D.style.backgroundColor ="grey";
+    Q4Dtext.style.backgroundColor ="grey";
+    Q4Dtext.style.color ="black";
+    Q4Dimage.style.filter = "grayscale(100%)";
+}
+Q4C.onclick = function Q4Cfunc() {
+    // event.preventDefault();
+    console.log("Q4C clicked");
+    Q4Ans = 0;
+    Q4A.style.backgroundColor ="grey";
+    Q4Atext.style.backgroundColor ="grey";
+    Q4Atext.style.color ="black";
+    Q4Aimage.style.filter = "grayscale(100%)";
+    Q4B.style.backgroundColor ="grey";
+    Q4Btext.style.backgroundColor ="grey";
+    Q4Btext.style.color ="black";
+    Q4Bimage.style.filter = "grayscale(100%)";
+    Q4C.style.backgroundColor ="yellow";
+    Q4Ctext.style.backgroundColor ="orange";
+    Q4Ctext.style.color ="white";
+    Q4Cimage.style.filter = "grayscale(0%)";
+    Q4D.style.backgroundColor ="grey";
+    Q4Dtext.style.backgroundColor ="grey";
+    Q4Dtext.style.color ="black";
+    Q4Dimage.style.filter = "grayscale(100%)";
+}
+Q4D.onclick = function Q4Dfunc() {
+    // event.preventDefault();
+    console.log("Q4D clicked");
+    Q4Ans = 1;
+    Q4A.style.backgroundColor ="grey";
+    Q4Atext.style.backgroundColor ="grey";
+    Q4Atext.style.color ="black";
+    Q4Aimage.style.filter = "grayscale(100%)";
+    Q4B.style.backgroundColor ="grey";
+    Q4Btext.style.backgroundColor ="grey";
+    Q4Btext.style.color ="black";
+    Q4Bimage.style.filter = "grayscale(100%)";
+    Q4C.style.backgroundColor ="grey";
+    Q4Ctext.style.backgroundColor ="grey";
+    Q4Ctext.style.color ="black";
+    Q4Cimage.style.filter = "grayscale(100%)";
+    Q4D.style.backgroundColor ="lime";
+    Q4Dtext.style.backgroundColor ="lime";
+    Q4Dtext.style.color ="white";
+    Q4Dimage.style.filter = "grayscale(0%)";
+}
+
+
 
 submit.onclick = function submit() {
     // event.preventDefault();
     console.log("submit clicked");
-    total = Q1Ans + Q2Ans + Q3Ans;
+    total = Q1Ans + Q2Ans + Q3Ans + Q4Ans + Q5Ans + Q6Ans;
     console.log("total correct = " + total)
 
 
